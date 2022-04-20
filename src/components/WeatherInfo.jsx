@@ -1,16 +1,16 @@
-import { UserContext } from '../contexts/weather';
+import { WeatherContext } from '../contexts/weather';
 import { useContext } from 'react';
 
 const WeatherInfo = () => {
-  const weatherData = useContext(UserContext);
+  const { weather } = useContext(WeatherContext);
   return (
-    <div className="weather-info">
-      <div className="weather-location">{weatherData.location}</div>
+    <div className="weather-info text-center">
+      <div className="weather-location">{weather.location}</div>
       <div className="weather-icon-wrapper">
-        <img className="weather-icon" src={weatherData.icon} alt={weatherData.location} />
+        <img className="weather-icon mx-auto" src={weather.icon} alt={weather.location} />
       </div>
-      <div className="weather-temp">{weatherData.temp}</div>
-      <div className="weather-feels-like">{weatherData.feelsLike}</div>
+      <div className="weather-temp">{weather.temp}&deg;</div>
+      <div className="weather-feels-like">Feels like {weather.feelsLike}&deg;</div>
     </div>
   );
 }

@@ -1,3 +1,5 @@
+import { roundTemp } from "../utils/formatters";
+
 // Load weather info from Open Weather Map
 export const getCityWeather = async (cityName) => {
   const apiKey = '382f59524073c13ea2c6dfb8347a2258';
@@ -14,9 +16,4 @@ export const getCityWeather = async (cityName) => {
     }
   }
   return formatData(data);
-};
-
-// Util function for rounding temperature
-export const roundTemp = (temp) => {
-  return Math.round(temp);
 };
