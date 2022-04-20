@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/cecitorres/react-weather/static/js/main.2d2be2cf.js",
+    "static/js/787.921a87ab.chunk.js": "/cecitorres/react-weather/static/js/787.921a87ab.chunk.js",
+    "index.html": "/cecitorres/react-weather/index.html",
+    "main.2d2be2cf.js.map": "/cecitorres/react-weather/static/js/main.2d2be2cf.js.map",
+    "787.921a87ab.chunk.js.map": "/cecitorres/react-weather/static/js/787.921a87ab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.2d2be2cf.js"
+  ]
+}
